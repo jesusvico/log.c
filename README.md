@@ -10,6 +10,16 @@ Minimal logging library for C
 - C and C++ compatible
 - Macros for convenience
 
+## Installation
+
+Since the library consists of just one .c and one .h file, you can simply drop them into your project.
+
+Alternatively, you can build and install the library:
+```bash
+make
+sudo make install
+```
+
 ## Usage
 
 ### Include the Header File
@@ -64,7 +74,7 @@ Only messages at or above the current `log_level` will be printed.
 log_level = LOG_LEVEL_INFO; // Only INFO and above will be logged
 ```
 
-You can easily turn off the logs:
+To disable logging entirely:
 ```c
 log_level = LOG_LEVEL_OFF; // Turn off logs
 ```
