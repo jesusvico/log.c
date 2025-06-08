@@ -5,6 +5,11 @@
 extern "C" {
 #endif
 
+// Version
+#define LOG_VERSION_MAJOR 1
+#define LOG_VERSION_MINOR 0
+#define LOG_VERSION_PATCH 1
+
 typedef enum {
     LOG_LEVEL_TRACE = 0,
     LOG_LEVEL_DEBUG,
