@@ -23,7 +23,7 @@ $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
 $(OBJ): $(SRC) | $(BUILD_DIR)
-	gcc $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(STATIC_LIB): $(OBJ)
 	ar rcs $@ $^
