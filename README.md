@@ -1,4 +1,4 @@
-# log.c
+# Liblog
 
 Minimal logging library for C
 
